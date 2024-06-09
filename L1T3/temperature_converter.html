@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prerna Gyanchandani's Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h2>Prerna Gyanchandani's <br><br>Temperature Converter</h2>
+        <div class="input-section">
+            <label for="temperature">Temperature</label>
+            <input type="text" id="temperature" placeholder="Enter temperature">
+        </div>
+        <div class="unit-section">
+            <label>Convert from</label>
+            <select id="unit-from">
+                <option>Select</option>
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+        <div class="unit-section">
+            <label>Convert to</label>
+            <select id="unit-to">
+                <option>Select</option>
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+        <div class="result" id="result"></div><br>
+        <button onclick="convertTemperature()">Convert</button>
+    </div>   
+    <footer>
+        <p>&copy; 2024 Prerna Gyani's Temperature Converter. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
